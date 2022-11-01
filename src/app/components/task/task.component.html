@@ -1,1 +1,4 @@
-<p>task works!</p>
+<h4>Title: {{task?.title}}</h4>
+<h5>Description: {{task?.description}}</h5>
+<p>Is Completed: {{task?.completed ? "Yes" : "No"}} -- Level: {{task?.level}}</p>
+<button (click)="deleteTask()" >Delete</button>
